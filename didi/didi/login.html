@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>用户登录</title>
+
+		<script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<style type="text/css">
+			body {
+				background-color: cornflowerblue
+			}
+			a {
+				text-decoration: none;
+			}
+			.icon {
+				height: 70px;
+				width: 70px;
+				background: darkcyan;
+				margin: 0px auto;
+				border-radius: 50%;
+			}
+			.login {
+				position: fixed;
+				width: 100%;
+				position: absolute;
+				top: 120px;
+			}
+			.counter {
+				width: 100%;
+				height: 40px;
+			}
+			#telnumber,
+			#password {
+				border-style: none;
+				font-size: 25px;
+				width: 97%;
+				height: 40px;
+				margin: 0px 1px;
+			}
+			.password {
+				width: 100%;
+				height: 40px;
+			}
+			.login_button {
+				width: 80%;
+				height: 40px;
+				background: gray;
+				margin: 0 auto;
+				margin-top: 15px;
+				line-height: 45px;
+				font-size: 25px;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="icon">
+			<img src="img/icon-user-act.png" width="70px" height="70px" />
+		</div>
+		<div class="login">
+			<div class="counter ">
+				<input type="tel" name="" id="telnumber" value="" placeholder="登录手机号" />
+			</div>
+			<br />
+			<div class="password">
+				<input type="password" name="" id="password" value="" placeholder="密码" />
+			</div>
+			<input type="checkbox" checked="checked" name="rember" id="rember" style="width: 40px;height: 40px;margin-top: 10px;" value="" />
+			<label for="rember" style="font-size: 18px;line-height: 20px;">记住登录信息</label>
+			<a href="index.html">
+
+				<div class="login_button" >
+					登&nbsp;录
+				</div>
+				<br />
+			</a>
+			<a href="error.html"><span style="color: red;font-size: 20px;">
+				忘记密码？
+			</span></a>
+			<a href="regit.html"><span style=";float: right;font-size: 20px;margin-right: 15px;">
+				注册账户
+			</span></a>
+		</div>
+
+	</body>
+
+</html>

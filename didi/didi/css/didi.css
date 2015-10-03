@@ -1,0 +1,623 @@
+/*公共样式开始*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+a {
+	text-decoration: none;
+}
+p {
+	color: #0CA6A5;
+	font-size: 20px;
+}
+button {
+	cursor: pointer;
+}
+/*顶部样式开始*/
+
+.index_nav {
+	position: fixed;
+	/*position: absolute;*/
+	
+	top: 0px;
+	z-index: 15;
+	width: 100%;
+	height: 50px;
+	background: #0CA6A5;
+}
+.index_nav_left {
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+.index_nav_right {
+	width: 50px;
+	height: 50px;
+	float: right;
+}
+/*顶部样式结束*/
+/*公共样式结束*/
+/*dingdan_details开始*/
+/*顶部样式开始*/
+
+.index_nav {
+	position: fixed;
+	position: absolute;
+	top: 0px;
+	z-index: 5;
+	width: 100%;
+	height: 50px;
+	background: #0CA6A5;
+}
+.index_nav_left {
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+.nav_right {
+	width: 80px;
+	margin-right: 40%;
+	line-height: 50px;
+	font-size: 20px;
+	height: 50px;
+	float: right;
+	color: white;
+}
+/*顶部样式结束*/
+/*内容区域开始*/
+
+.contents {
+	width: 100%;
+	height: 90%;
+	position: absolute;
+	margin-top: 50px;
+}
+/*个人图标发单人信息栏*/
+
+.contents1 {
+	width: 100%;
+	height: 150px;
+	background: url(../img/bgbg.jpg);
+}
+.contents1_icon {
+	width: 20%;
+	height: 100px;
+	position: absolute;
+	top: 30px;
+	left: 40px;
+}
+.contents1_dd {
+	width: 40%;
+	height: 100px;
+	position: absolute;
+	top: 30px;
+	left: 150px;
+}
+.contents1_icon img {
+	border-radius: 50%;
+	background: #008B8B;
+}
+.contents2 {
+	width: 100%;
+	height: 150px;
+}
+<!--订单具体信息开始--> .contents3 {
+	width: 100%;
+	height: 150px;
+	background: ;
+}
+.contents3 .dd_details {
+	width: 95%;
+	height: 110px;
+	margin: 0px auto;
+	border: 1px solid gainsboro;
+}
+.contents3 .frsh_btn {
+	color: #019D8B;
+	font-weight: 700;
+	width: 80px;
+	height: 40px;
+	margin: 0px auto;
+	line-height: 40px;
+	cursor: pointer;
+}
+<!--订单具体信息结束-->
+/*btn*/
+
+.btn {
+	margin: 0px auto;
+	height: 45px;
+	color: gray;
+}
+/*btn_q*/
+
+.btn_q {
+	margin-left: 20px;
+	float: left;
+	width: 150px;
+	height: 45px;
+	cursor: pointer;
+}
+/*btn_q*/
+/*btn_k开始*/
+
+.btn_k {
+	margin-right: 20px;
+	float: right;
+	width: 150px;
+	height: 45px;
+}
+/*btn_k结束*/
+/*btn*/
+/*内容区域结束*/
+/*dingdan_details开始*/
+/*dingdan_details开始*/
+/*dingdan_list样式开始*/
+
+.dd_list_contents {
+	width: 100%;
+	z-index: 3;
+	height: auto;
+	position: absolute;
+	top: 43px;
+}
+/*dingdan_list样式结束*/
+/*index样式开始*/
+
+<style type="text/css"> * {
+	margin: 0px;
+	padding: 0px;
+}
+a {
+	text-decoration: none;
+}
+/*顶部样式开始*/
+
+.index_nav {
+	position: fixed;
+	position: absolute;
+	top: 0px;
+	z-index: 5;
+	width: 100%;
+	height: 50px;
+	background: #0CA6A5;
+}
+.index_nav_left {
+	float: left;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+.index_nav_right {
+	width: 50px;
+	height: 50px;
+	float: right;
+	cursor: pointer;
+}
+/*顶部样式结束*/
+/*侧面菜单*/
+
+.slide {
+	margin-top: 50px;
+	position: absolute;
+	z-index: 300;
+	width: 40%;
+	height: auto;
+	background: #FFF;
+	display: none;
+}
+/*用户图标的设置*/
+
+.user_icon {
+	width: 100%;
+	height: 90px;
+	border-bottom: 1px solid gray;
+	cursor: pointer;
+}
+/*图标图片*/
+
+.user_icon img {
+	background: #0CCDF7;
+	margin-left: 25%;
+	border-radius: 50%;
+}
+/*各项菜单的设置*/
+
+.menu {
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid gray;
+}
+.icon1 {
+	position: absolute;
+	width: 30% height: 60px;
+}
+.lable {
+	position: relative;
+	top: 20px;
+	left: 45%;
+}
+/*快递选择地点*/
+
+.local {
+	position: absolute;
+	top: 40%;
+	left: 32%;
+	text-align: center;
+	width: 40%;
+	height: auto;
+	background: #0CB8BB;
+	z-index: 200;
+	display: none;
+}
+.local ul li {
+	height: 25px;
+	list-style: none;
+	color: white;
+	padding-top: 10px;
+}
+/*分割线的样式 */
+
+#line {
+	width: 65%;
+	height: 1px;
+	background: gray;
+	margin: 0 auto;
+}
+/*接单发单css样式*/
+
+.fabu {
+	position: absolute;
+	bottom: 20px;
+	width: 90%;
+	height: 50px;
+	z-index: 30;
+}
+/*发单按钮*/
+/*按钮的全部设置*/
+
+.fa {
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 25px;
+	line-height: 50px;
+	text-align: center;
+	width: 80px;
+	height: 50px;
+	float: left;
+	margin-left: 20px;
+	background: #0CA6A5;
+}
+/*接单按钮*/
+
+.jie {
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 25px;
+	line-height: 50px;
+	text-align: center;
+	width: 80px;
+	height: 50px;
+	float: right;
+	background: #0CA6A5;
+}
+/*index样式结束*/
+/*express_details开始*/
+/*内容*/
+
+.detail_content {
+	margin-top: 50px;
+	width: 100%;
+	height: auto;
+}
+/*个人详情开始*/
+
+.person_details {
+	color: white;
+	width: 100%;
+	height: 130px;
+	background: url(../img/person_icon.png)
+}
+/*个人图标*/
+
+.icon_person_jie {
+	position: absolute;
+	left: 20px;
+	top: 80px;
+	width: 60px;
+	height: 60px;
+	background: #008B8B;
+	border-radius: 50%;
+}
+/*评价详情*/
+
+.pingjia {
+	margin-top: 5px;
+	width: 60%;
+	height: 100%;
+	float: right;
+}
+/*个人详情结束*/
+/*宿舍班级电话*/
+
+.tel_details {
+	width: 100%;
+	height: 80px;
+	border-bottom: 1px gray solid;
+	padding: 6px 1px;
+	position: absolute;
+}
+/*拨打电话图标的按钮设置*/
+
+.call_icon {
+	width: 100%;
+	height: 40px;
+	/*background: red;*/
+}
+/*信息的填写*/
+
+.message_details {
+	margin-top: 5px;
+	widows: 100%;
+	height: auto;
+	background: gainsboro;
+}
+/*按钮样式*/
+
+.btns {
+	width: 100%;
+	height: 50px;
+}
+.button1 {
+	width: intrinsic;
+	height: 30px;
+	background: #0CA6A5;
+	line-height: 30px;
+	color: white;
+	margin: 0px 10px;
+	padding: 3px 5px;
+	border-radius: 5px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.btn_right {
+	float: right;
+}
+.btn_left {
+	float: left;
+}
+/*express_details结束*/
+/*checkphone开始*/
+
+.nav_yanzheng {
+	width: 100%;
+	height: 45px;
+	border-bottom: 1px solid ghostwhite;
+}
+.nav_btn_yanzheng {
+	height: 40px;
+}
+.nav_center_yanzheng {
+	position: relative;
+	top: -40px;
+	width: 50%;
+	margin: 0 auto;
+	font-weight: 300;
+	text-align: center;
+	line-height: 40px;
+}
+.nav_right_yanzheng {
+	float: right;
+	position: relative;
+	top: -80px;
+}
+#next_bu {
+	line-height: 40px;
+	font-weight: 600;
+	color: deepskyblue;
+}
+.check_number {
+	margin-top: 20px;
+}
+#number {
+	position: absolute;
+	left: 10px;
+	top: 150px;
+	border： 1px;
+	line-height: 30px;
+	width: 30%;
+}
+.time {
+	position: absolute;
+	top: 150px;
+	left: 45%;
+	border: 1px solid gray;
+	width: 110px;
+	height: 30px;
+	border-radius: 5px;
+	float: right;
+	line-height: 25px;
+}
+/*checkphone结束*/
+/*fadan_history开始*/
+
+.dd_history_content {
+	width: 100%;
+	height: auto;
+}
+/*fadan_history结束*/
+/*regit开始*/
+
+.nav_reg {
+	position: absolute;
+	width: 100%;
+	height: 45px;
+	border-bottom: 1px solid ghostwhite;
+}
+.nav_btn_reg {
+	height: 40px;
+}
+.nav_center_reg {
+	position: relative;
+	top: -40px;
+	font-weight: 300;
+	text-align: center;
+	line-height: 40px;
+}
+.nav_right_reg {
+	float: right;
+	position: relative;
+	top: -80px;
+}
+#next_reg {
+	line-height: 40px;
+	font-weight: 600;
+	color: deepskyblue;
+}
+.content_reg {
+	width: 100%;
+	height: 200px;
+	position: relative;
+	top: 70px;
+}
+/*整体输入框*/
+
+.regit {
+	margin-top: 10px;
+	width: auto;
+	height: 40px;
+	border: 1px solid gainsboro;
+}
+/*文本标签真实姓名和手机号码的设置*/
+
+.title {
+	line-height: 40px;
+	color: darkgrey;
+}
+/*两个输入表单的样式*/
+
+.user {
+	width: 100%;
+	height: 40px;
+	font-size: 25px;
+	line-height: 30px;
+	border-style: none;
+	color: indigo
+}
+/*登录按钮*/
+
+.login_btn {
+	width: 60px;
+	height: 30px;
+	background: cornflowerblue;
+	font-size: 25px;
+	text-align: center;
+	border: 1px solid gray;
+	border-radius: 4px;
+	float: right;
+}
+/*regit结束*/
+/*set_password开始*/
+
+.setpassword {
+	width: 98%;
+	height: 40px;
+	border-bottom: 1px solid gainsboro;
+}
+#setpassword_title {
+	text-align: center;
+	font-weight: 100;
+	line-height: 40px;
+}
+#setpassword_right {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	line-height: 10px;
+	color: #00BFFF;
+}
+/*两个框的box设置*/
+
+.password {
+	width: 98%;
+	height: 30px;
+	margin-top: 20px;
+}
+/*输入框的设置*/
+
+#password1,
+#password2 {
+	border-radius: 2px;
+	font-size: 14px;
+	width: 100%;
+	height: 40px;
+	border: solid 1px darkolivegreen;
+}
+/*set_password结束*/
+/*express_finnish开始*/
+/*<!--订单距离终点 送达时间-->*/
+
+.dd_time {
+	width: 85%;
+	height: 35px;
+	z-index: 50;
+	position: absolute;
+	margin-top: 52px;
+	margin-right: 5%;
+	margin-left: 10px;
+	background: white;
+	border: 1px solid darkgray;
+	line-height: 35px;
+	padding: 5px 20px;
+}
+/*完成按钮样式*/
+
+.finish_btn {
+	line-height: 40px;
+	text-align: center;
+	color: white;
+	width: 20%;
+	height: 40px;
+	background: #0CA6A5;
+	z-index: 50;
+	position: absolute;
+	bottom: 15px;
+	left: 40%;
+	cursor: pointer;
+}
+/*express_finnish结束*/
+/*jiedan_yanzheng页面样式开始*/
+
+.yangzheng_user {
+	margin-top: 50px;
+	width: 100%;
+	height: 120px;
+	font-size: 25;
+	padding-left: 10px;
+	color: white;
+	background: url(../img/person_icon.png);
+}
+/*验证用户信息详情*/
+
+.user_detail {
+	width: 100%;
+	height: 150px;
+	border: 1px solid gainsboro;
+}
+/*用户验证输入信息*/
+
+.yanzheng_infor {
+	padding: 0px auto;
+	;
+}
+/*身份证号码输入框*/
+
+.yanzheng_infor_sfz {
+	margin: 0px auto;
+	width: 80%;
+	height: 30px;
+	border-bottom: 1px solid gray;
+	margin-top: 30px;
+}
+/*jiedan_yanzheng页面样式结束*/

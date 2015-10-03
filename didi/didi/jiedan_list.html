@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.4.5.min.css" />
+		<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/didi.css" />
+
+		<script type="text/javascript">
+			 //返回上一次操作
+			function back() {
+				window.history.go(-1);
+			};
+
+			function open_dd_details() {
+				window.open("dingdan_details.html", "aa");
+			};
+		</script>
+	</head>
+
+	<body>
+		这里是接单看到的列表
+		<!--顶部菜单开始-->
+		<header class="index_nav">
+			<!--后退图标-->
+			<div class="index_nav_left" onclick="back()">
+				<img src="img/icon-back-act.png" width="50px" height="50px" />
+			</div>
+			<div class="index_nav_right" onclick="open_right_menue()">
+				<img src="img/icon-moreact.png " />
+			</div>
+		</header>
+		<!--顶部才按结束-->
+		<div class="dd_list_contents">
+
+			<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="筛选你要查询订单所包含的信息" id="content_list">
+				<li data-role="list-divider">2015-9-1 <span class="ui-li-count">4</span></li>
+				<li onclick="open_dd_details()">
+					<a href="#">
+						<h1>圆通</h1>
+						<p class="ui-li-aside"><strong><span>发布时间：</span>13:52</strong>PM</p>
+						<p>快递在: 三区拐弯处 </p>
+						<p> 送达:4a705 </p>
+					</a>
+				</li>
+				<li onclick="open_dd_details()">
+					<a href="#">
+						<h1>韵达</h1>
+						<p class="ui-li-aside"><strong><span>送达时间：</span>12:58</strong>PM</p>
+						<p>快递在: 四区门口 </p>
+						<p> 送达:四b706 </p>
+					</a>
+				</li>
+				<li onclick="open_dd_details()">
+					<a href="#">
+						<h1>京东</h1>
+						<p class="ui-li-aside"><strong><span>发布时间：</span>11:55</strong>PM</p>
+						<p>快递在: 学校门口 </p>
+						<p> 送达:二区502 </p>
+					</a>
+				</li>
+				<li onclick="open_dd_details()">
+					<a href="#">
+						<h1>圆通</h1>
+						<p class="ui-li-aside"><strong><span>发布时间：</span>10:58</strong>PM</p>
+						<p>快递在: 三区拐弯处 </p>
+						<p> 送达:三区拐弯处 </p>
+					</a>
+				</li>
+				<li onclick="open_dd_details()">
+					<a href="#">
+						<h1>韵达</h1>
+						<p class="ui-li-aside"><strong><span>发布时间：</span>12:58</strong>PM</p>
+						<p>快递在: 四区门口 </p>
+						<p> 送达:四b706 </p>
+
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+
+</html>

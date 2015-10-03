@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/didi.css" />
+		<title>首页</title>
+
+		<script src="js/jquery-2.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			 //打开侧栏菜单
+			var mark1 = 0;
+			var mark2 = 0;
+
+			function open_slide() {
+				if (mark1 == 0) {
+					$('.slide').slideDown(100);
+					mark1 = 1;
+					$('.local').hide("fast");
+				} else {
+					$('.slide').hide("slow");
+					mark1 = 0;
+				}
+			};
+			 //发单
+			function sending() {
+				if (mark2 == 0) {
+					$('.local').show('slow');
+					mark2 = 1;
+					$('.slide').hide("fast");
+					mark1 = 0;
+				} else {
+					$('.local').hide('fast');
+					mark2 = 0;
+				}
+			};
+			 //接单
+			function receiving() {
+				window.open("jiedan_list.html")
+					//	判断是否已经实名验证？没有进行实名验证
+				if (0 == 7) {
+					//进行实名验证的页面
+				} else {
+					//已经实名验证就跳转到订单列表
+					window.open("jiedan_list.html");
+				}
+			};
+			 //登录
+			function login() {
+				window.open('login.html');
+			};
+			 //发单成功弹出对话框
+			function fadan_queren() {
+				$('.local').hide();
+				alert("发单成功，请稍候注意接单成功信息");
+				
+			};
+			
+		</script>
+
+	</head>
+
+	<body>
+		<!--顶部菜单开始-->
+		<header class="index_nav">
+			<div class="index_nav_left" onclick="open_slide()">
+				<img src="img/icon-menu-act.png" width="50px" height="50px" />
+			</div>
+			<div class="index_nav_right" ">
+			<img src="img/icon-moreact.png " />
+		</div>
+	</header>
+	<!--顶部才按结束-->	
+		
+	<!--地图页面-->
+		<iframe style="z-index: 1;position: absolute; "src="map.html " frameBorder="0 " width=100%  scrolling="no "  height=100%;></iframe>
+		<!--侧边菜单开始-->
+		<div class="slide ">
+			<!--用户图标-->
+			<div class="user_icon "  onclick="login() ">
+				<img src="img/icon-user-act.png " width="60px " height="60px " />
+			  <div style="width: 100%;height: 25px;text-align: center;font-size: 18px; ">登录</div>
+			
+			</div>
+			<!--个人资料-->
+			<a href="personal.html ">
+				<div class=" menu menu1 ">
+					<div class="icon1 ">
+						<img src="img/icon-adduser-act.png " />
+					</div>
+					<div class="lable ">
+						个人资料
+					</div>
+				</div>
+			</a>
+			<!--递递记录-->
+			<a href="dingdan_history.html">
+				<div class=" menu menu2 ">
+					<div class="icon1 ">
+						<img src="img/icon-menu-act.png " />
+					</div>
+					<div class="lable ">
+						递递记录
+					</div>
+				</div>	
+			</a>
+			<!--我的钱包-->
+			<a href="money.html ">
+				<div class=" menu menu3 ">
+					<div class="icon1 ">
+						<img src="img/icon-warn-act.png " />
+					</div>
+					<div class="lable ">
+						我的钱包
+					</div>
+			    </div>
+			</a>
+			
+			<a href="setting.html ">
+				<div class=" menu menu4 ">
+					<div class="icon1 ">
+						<img src="img/icon-setting-act.png " />
+					</div>
+					<div class="lable ">
+						设  置
+			 		</div>
+				</div>
+			</a>
+			
+			<!--关于软件的菜单-->
+			<a href="about.html ">
+				<div class=" menu menu1 ">
+					<div class="icon1 ">
+						<img src="img/icon-home-act.png " />
+					</div>
+					<div class="lable ">
+						关    于
+					</div>
+				</div>
+			</a>
+		</div>	
+<!--侧边菜单结束-->
+			<!--快递地点选择-->
+		<div class="local ">
+			<ul>
+				<li style="font-weight: 700; ">--填写发单快递--</li>
+				<select name="kd_company " style="width: 80%;height: 25px;margin: 0px auto; ">
+					<option >--快递公司--</option>
+					<option value="圆通 ">圆通</option>
+					<option value="顺丰 ">顺丰</option>
+					<option value="韵达 ">韵达</option>
+					<option value="京东 ">京东</option>
+					<option value="天天 ">天天</option>	 
+					<option value="元通 ">元通</option>
+					<option value="全峰 ">全峰</option>
+				</select><br />
+				<select name="kd_local "style="width: 80%;height: 25px;margin: 0px auto;margin-top: 15px; ">
+					<option value=" ">--快递地点--</option>
+					<option value="三区拐弯处 ">三区拐弯处</option>
+					<option value="学校大门口 ">学校大门口</option>
+					<option value="图书馆西门 ">图书馆西门</option>
+					<option value="六区拐弯处 ">六区拐弯处</option>
+				</select><br />
+				<select name="kd_time "style="width: 80%;height: 25px;margin: 0px auto;margin: 15px; ">
+					<option value=" ">--送达时间--</option>
+					<option  value="8:00~9:00 ">8:00~9:00</option>
+					<option  value="8:00~9:00 ">9:00~10:00</option>
+					<option  value="8:00~9:00 ">10:00~11:00</option>
+					<option  value="8:00~9:00 ">11:00~12:00</option>
+					<option  value="8:00~9:00 ">12:00~13:00</option>
+					<option  value="8:00~9:00 ">13:00~14:00</option>
+					<option  value="8:00~9:00 ">14:00~15:00</option>
+					<option  value="8:00~9:00 ">15:00~16:00</option>
+					<option  value="8:00~9:00 ">16:00~17:00</option>
+					<option  value="8:00~9:00 ">17:00~18:00</option>
+					<option  value="8:00~9:00 ">18:00~19:00</option>
+					<option  value="8:00~9:00 ">19:00~20:00</option>
+					<option  value="8:00~9:00 ">20:00~21:00</option>
+					<option  value="8:00~9:00 ">21:00~22:00</option>
+					<option  value="8:00~9:00 ">22:00~23:00</option>
+					<option  value="8:00~9:00 ">23:00~24:00</option>
+					
+				</select>
+				<!--发单信息确认按钮-->
+				<li style=" width: 80px; cursor: pointer; height: 25px;margin: 0px auto; border: 1px solid lightseagreen; " onclick="fadan_queren() ">确认</li>
+				
+			</ul>
+		</div>
+			<!--接单发单按钮-->
+	     <div class="fabu ">		
+		<div class="fa " onclick="receiving() ">
+			接单
+			</div>
+			<div class="jie " onclick="sending() ">
+				发单
+			</div>
+		</div>
+	<a href="http://aliyun.gein.cn " style="margin-top:450px;text-align:center ">粤ICP备15075648号</a>
+
+	</body>
+
+</html>

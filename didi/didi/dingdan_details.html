@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.4.5.min.css" />
+		<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/didi.css" />
+		<script src="js/didi.js" type="text/javascript" charset="utf-8"></script>
+		<title>订单详情</title>
+
+		<script type="text/javascript">
+			 //返回上一次操作
+			function back() {
+				window.history.go(-1);
+			};
+			 //点击刷新按钮获取发单人提交的信息并显示在div中并隐藏对应区域
+			function fleshmessage() {
+				$('.dd_details').html("你好，你有快递，请于4:40-5:40之间到三区定点处即公厕旁校园复印部对面对面领取，10号，全峰快递。");
+			}
+		</script>
+	</head>
+
+	<body>
+		<!--顶部菜单开始-->
+		<header class="index_nav">
+			<!--后退图标-->
+			<div class="index_nav_left" onclick="back()">
+				<img src="img/icon-back-act.png" width="50px" height="50px" />
+			</div>
+			<div class="nav_right" ">
+				订单详情
+			</div>
+		</header>
+		<!--顶部才按结束-->
+		<!--内容区域开始-->
+		<div class="contents ">
+				<!--个人图标发单人信息栏-->
+			<div class="contents1 ">
+				<div class="contents1_icon "><img src="img/icon-user-act.png "width="80px "height="80px "/></div>
+				<div class="contents1_dd "><span id=" " style="font-size: 23px;color: white; ">
+					刘同学
+				</span><span id=" " style="color: #0CA6A5; ">
+					订单
+				</span>
+				<p style="color: #0CA6A5; ">请尽快联系刘同学，确定订单信息</p>
+				</div>
+
+			</div>
+			<!--快递点送达地-->
+			<div class="contents2 ">
+			<p>快递点：三区拐弯处</p>
+			<p>目的地：六区601</p>
+			<!--获取发单人电话号码替换18300076621-->
+			<a href="tel:18300076621 "><p style="width: 95%;height: 45px;border: 1px solid gainsboro; margin: 0px auto;text-align: center;line-height: 45px; ">联系发单人<img src="img/icon-call-act.png "width="45px "height="45px " style="float: right;margin-right:
+			15px; "/></p></a>
+			</div>
+			<!--订单具体信息-->
+			<div class="contents3 ">
+				<div class="dd_details ">
+					<img src="img/icon-disk-act.png " width=" 50px "height=50px"/>
+			<span style="position: absolute;margin-top: 15px;">等待订单具体信息</span>
+			</div>
+			<!--刷新按钮按键-->
+			<div class="frsh_btn" onclick="fleshmessage()">
+				刷新信息
+			</div>
+			</div>
+			<!--取消开始代送按钮-->
+			<div class="btn ">
+				<!--取消按钮-->
+				<div class="btn_q ">
+					<span class=" quxiao_icon " style="width: 45px;height: 45px; float: left; ">
+					<img src="img/icon-forward-act.png "height="45px " width="40px " id="img1 "/>	
+					</span>
+					<span class=" quxiao_wenzi " style="width: 45px;height: 45px; float: left;line-height: 45px; cursor: pointer; ">
+						取消
+					</span>
+				</div>
+				<!--开始代送按钮-->
+				<div class="btn_k ">
+					<span class=" ksds_icon " style="width: 45px;height: 45px; float: left; ">
+					<img src="img/icon-map-act.png"height="45px " width="40px " id="img1 "/>	
+					</span>
+					<a href="dingdan_finish.html"><span class=" ksds_wenzi " style="width: 65px;height: 45px; float: left;line-height: 45px; cursor: pointer; ">
+						开始代送
+					</span></a>
+
+				</div>
+			</div>
+			</div>
+			</div>
+			<!--内容区域结束-->
+	</body>
+
+</html>

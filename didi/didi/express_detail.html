@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/didi.css" />
+		<title>订单详情</title>
+		<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+		<script>
+			 //后退按钮
+			function back() {
+				history.go(-1);
+			};
+
+			function queren() {
+				$('.message_contents').show("fast");
+			};
+			 //取消订单
+			function quxiao() {
+				//改变确认订单的文本内容
+				$('.btn_right').html("确认订单");
+				//清空信息输入框
+				$('#message_area').val("");
+				//取消订单的业务代码
+			};
+			 //打开系统信息
+			function copy_message() {};
+			 //获取到输入的快递信息
+			function confirm_message() {
+				//更改确认订单为取消订单
+				var messagecontent = $('.btn_right').html("修改订单");
+				//隐藏信息输入框
+				$('.message_contents').hide('slow');
+			};
+		</script>
+	</head>
+	<style type="text/css">
+	</style>
+
+	<body>
+		<!--弹出的信息输入框-->
+		<div class="message_contents" style=" display: none; border: 1px solid green; width: 70%;height: 20%;z-index: 200;position: absolute; margin-top: 40%;margin-left: 15%;">
+			<textarea id="message_area" style="width: 100%;height: 100%;border-style:none ;font-size: 18px;" placeholder="请输入快递信息"></textarea>
+			<!--粘贴信息确认信息按钮-->
+			<a href="sms:*?body=">
+				<button style=" width: 50%;height: 35px;border-style: none;background: #0CA6A5; float: left;margin-top: -8px; cursor: pointer;" onclick="copy_message()">粘贴信息</button>
+			</a>
+			<a href="dingdan_pingjia.html">
+				<button id="button2" style=" width: 50%;height: 35px;border-style: none;background: #FCA6A5; float: right;margin-top: -8px; cursor: pointer;" onclick="confirm_message()">确认信息</button>
+			</a>
+
+		</div>
+
+		<!--顶部菜单开始-->
+		<header class="index_nav">
+			<!--后退图标-->
+			<div class="index_nav_left" onclick="back()">
+				<img src="img/icon-back-act.png" width="50px" height="50px" />
+			</div>
+			<div class="index_nav_right" onclick="open_right_menue()">
+				<img src="img/icon-moreact.png " />
+			</div>
+		</header>
+		<!--顶部才按结束-->
+		<div class="detail_content ">
+
+			<div class="person_details ">
+				<!--个人图标-->
+				<div class="icon_person_jie ">
+					<img src="img/icon-user-act.png " width="60px " height="60px " />
+				</div>
+
+				<!--评价详情-->
+				<div class="pingjia ">
+					<p><span style="font-size: 25px; ">韩同学</span><span id=" ">
+					已接单
+				</span></p>
+					<br />
+					<!--接单数-->
+					<p> <span id=" ">
+					接单数：
+				</span>
+						<span id=" ">
+					5单
+				</span></p>
+					<!--评价-->
+					<p>
+						<span id=" ">
+					评价：
+				</span>
+						<span id=" ">
+					4.5分
+				</span></p>
+				</div>
+			</div>
+
+			<!--专业班级电话-->
+			<div class="tel_details ">
+				<p><span id="class ">
+				专业班级：
+			</span><span id="classnum ">
+				电信12-2
+			</span></p>
+				<p>
+					<span id="room ">
+					&nbsp;&nbsp;宿&nbsp;舍&nbsp;区：
+				</span>
+					<span id="roomnum ">
+					六区
+				</span>
+				</p>
+				<a href="tel:18300076621 ">
+					<div class="call_icon ">
+						<span id="call " style="line-height: 45px;margin-left: 25%;font-weight: 700; ">
+					联系接单人
+				</span>
+						<span id=" ">
+					<img src="img/icon-call-act.png " width="40px " style="float: right; "/>
+				</span>
+					</div>
+				</a>
+				<!--快递信息-->
+				<div class="message_details ">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;韩同学离你500米，估计10分钟可以送达目的地。保持电话畅通,韩同学离你500米，估计10分钟可以送达目的地。保持电话畅通
+				</div>
+				<!--按钮-->
+				<div class="btns ">
+					<div class=" btn_left button1 " onclick="quxiao() ">
+						取消订单
+					</div>
+					<div class="btn_right button1 " onclick="queren() ">
+						确认订单
+					</div>
+
+				</div>
+			</div>
+
+	</body>
+
+</html>

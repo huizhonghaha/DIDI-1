@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.4.5.min.css" />
+		<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/didi.css" />
+		<title>订单评价</title>
+	</head>
+
+	<body>
+		<!--顶部菜单开始-->
+		<header class="index_nav">
+			<div class="index_nav_left" onclick="open_slide()">
+				<img src="img/icon-menu-act.png" width="50px" height="50px" />
+			</div>
+			<div class="index_nav_right" ">
+			<img src="img/icon-moreact.png " />
+		</div>
+		
+	</header>
+	
+	<!--订单距离终点 送达时间-->
+		<div class="jiedan_pingjia " style="width: 85%; height: 35px; z-index: 50; position: absolute; margin-top: 52px; text-align:center;margin-left: 10px; background: white; border: 1px solid darkgray; line-height: 35px; padding: 5px 20px; ">
+			<span id=" " >
+				韩同学接单数：5单 &nbsp;评价：4.5分
+			</span>
+		</div>
+		<!--地图页面-->
+		<iframe style="z-index: 1;position: absolute; "src="map.html " frameBorder="0 " width=100%  scrolling="no "  height=100%;></iframe>
+		
+		<div class="dingdan_time " style="width: 85%; height: 35px; z-index: 50; text-align:center;margin-left: 10px; background: white; border: 1px solid darkgray; line-height: 35px;position: absolute; padding: 5px 20px; bottom:20px ">
+			<span id=" " >
+					订单距你：300米，预计时间：3分钟
+			</span>
+		</div>
+		<div class="pingjia_contents " style="position: absolute;z-index: 100;width: 94%;height: 200px;margin: 40% 3%;text-align: center; background: white;display: none; ">
+			
+			
+			<h1>评价</h1>
+			<progress max="5 " value="3 ">3分</progress>5分
+			<input type="radio " id="pj1 " name="pj "/><label for="pj1 ">态度好，速度快，</label>
+			<input type="radio " id="pj2 " name="pj "/><label for="pj2 ">颜值一般，速度一般</label>
+			<input type="radio " id="pj3 " name="pj "/><label for="pj3 ">态度差，速度慢</label>
+			<input type="submit " id=" " name=" "  value="确定 "/>	
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.4.5.min.css" />
+		<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/didi.css" />
+		<script src="js/didi.js" type="text/javascript" charset="utf-8"></script>
+		<title>实名验证</title>
+
+		<script type="text/javascript">
+			 //返回上一次操作
+			function back() {
+				window.history.go(-1);
+			};
+			 //点击刷新按钮获取发单人提交的信息并显示在div中并隐藏对应区域
+			function fleshmessage() {
+				$('.dd_details').html("你好，你有快递，请于4:40-5:40之间到三区定点处即公厕旁校园复印部对面对面领取，10号，全峰快递。");
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<!--顶部菜单开始-->
+		<header class="index_nav">
+			<!--后退图标-->
+			<div class="index_nav_left" onclick="back()">
+				<img src="img/icon-back-act.png" width="50px" height="50px" />
+			</div>
+			<div class="nav_right" ">
+				实名验证
+			</div>
+		</header>
+		<!--顶部才按结束-->
+		<!--内容区域开始-->
+		<div class="yangzheng_user ">
+		<br />
+		<br />
+		<br />
+		<br />
+		<h2>韩凯</h2>
+		</div>
+		<!--验证用户信息详情-->
+		<div class="user_detail ">
+			<h4>专业班级:电信11-2</h4>
+			<h4>宿舍号:六区907</h4>
+			<h4>短号:646193</h4>
+			<h4>电话:14718070702</h4> <br />
+			<h3>为了保证快件安全，成为接单用户还需要进行以下实名验证</h3>
+		</div>
+		<!--用户验证输入信息-->
+		<div class="yanzheng_infor ">
+			<form action=" " method="post ">
+			<div class="yanzheng_infor_sfz ">
+				<input   id=" " placeholder="身份证号码 " style="width: 100%;height: 30px;border-style: none;text-align: center; "/>
+				
+			</div>
+			<br />
+			<input type=" " name=" " id=" " value="学生证照片 " style="width: 130px;height: 40px;background: red;border-style: none;color: white; text-align: center; margin: auto 40%; " />
+			<br />
+			<br />
+			<input type="submit " value="确认 " style="width: 130px;height: 40px;background: red;border-style: none;color: white;text-align: center; margin: auto 40%; " />
+			</form>
+			</div>
+			<!--内容区域结束-->
+	</body>
+
+</html>

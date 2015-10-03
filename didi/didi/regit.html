@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>注册账户</title>
+
+		<script src="js/jquery-2.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/didi.css" />
+		<script type="text/javascript">
+		</script>
+
+		<script src="js/jquery-2.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function back() {
+				history(-1);
+			};
+		</script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<header class="nav_reg">
+			<div class="nav_left_reg nav_btn_reg">
+			</div>
+			<h1 class="nav_center_reg">注册</h1>
+			<div class="nav_right_reg nav_btn_reg">
+				<a href="checkphone.html"><span id="next_reg">下一步</span></a>
+
+			</div>
+		</header>
+		<div class="content_reg">
+			<br />
+			<div class="regit">
+				<!--<span class="title ">真实姓名</span>-->
+				<input type="text" class="username user" name="username" autofocus="autofocus" placeholder="请输入真实姓名" />
+			</div>
+			<div class="regit">
+				<!--<span class="title">手机号码</span>-->
+				<input type="text" class="usernumber user" name="usernumber" placeholder="你的注册手机号" />
+			</div>
+			<br/>
+			<p style="float: right;
+			">已有账户?</p>
+			<br />
+			<br />
+			<!--登录按钮-->
+			<div class="login_btn">
+				<a href="login.html" style="color: white;">登录</a>
+			</div>
+		</div>
+
+	</body>
